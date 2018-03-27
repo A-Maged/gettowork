@@ -1,7 +1,7 @@
 .job-listing
     margin-top: 50px
     position: relative
-    &::before
+    &::after
         content: ""
         background-color: $seconary_color
         width: 2px
@@ -9,12 +9,12 @@
         z-index: -1
         position: absolute
         top: 0
-        left: 8em
+        left: 3.5em
 
     +element('day')
-        width: 9em
+        width: 7em
         padding: 1em 0
-        margin: 10px 0 2em 3.5em
+        margin: 10px 0 2em 0em
         text-align: center
         background-color: #fff
         border: 1px solid $border_color
@@ -38,3 +38,10 @@
         &:hover
             color: $main_color
             border-color: $main_color
+
+
+
+@media only screen and (max-width: 768px)
+    .job-listing
+        &::after
+            left: 3em
