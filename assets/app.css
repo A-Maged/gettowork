@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.content-wrapper {
+  width: 750px;
+  max-width: 90%;
+  margin: 0 auto 15em; }
+
+.job-listing {
+  margin-top: 50px;
+  position: relative; }
+  .job-listing::before {
+    content: "";
+    background-color: #9592ad;
+    width: 2px;
+    height: 90%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 8em; }
+  .job-listing__day {
+    width: 9em;
+    padding: 1em 0;
+    margin: 10px 0 2em 3.5em;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #d9dee9;
+    border-radius: 2em;
+    text-transform: capitalize; }
+  .job-listing__more-btn {
+    width: 9em;
+    padding: 1em 0;
+    margin: 2em auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #d9dee9;
+    border-radius: 2em;
+    text-transform: capitalize; }
+
+.nav {
+  margin-top: 1.5em; }
+  .nav__logo {
+    width: 60px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle; }
+    .nav__logo img {
+      width: 100%;
+      height: 100%; }
+  .nav__title {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: #34314c;
+    font-size: 1.5em;
+    text-transform: capitalize; }
+    .nav__title span {
+      font-weight: 400; }
+  .nav__list {
+    float: right;
+    padding-top: 1.9em;
+    padding-left: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    list-style: none; }
+    .nav__list__item {
+      margin: 0 0.5em;
+      display: inline-block;
+      font-size: 0.8em;
+      color: #9592ad; }
+      .nav__list__item--active {
+        color: #34314c;
+        font-weight: 600; }
+
+.job {
+  width: 80%;
+  margin: 0 auto 2em;
+  z-index: 10;
+  padding: 1.3em;
+  border: 1px solid #d9dee9;
+  border-radius: 0.4em;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out; }
+  .job:hover {
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1); }
+  .job__company-img {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    vertical-align: middle; }
+    .job__company-img img {
+      width: 100%;
+      height: 100%; }
+  .job__info-wrapper {
+    width: calc(100% - 80px);
+    padding-left: 15px;
+    display: inline-block;
+    text-transform: capitalize;
+    vertical-align: middle;
+    color: #9592ad; }
+    .job__info-wrapper__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      display: block;
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #34314c; }
+    .job__info-wrapper__info {
+      font-size: 0.9em; }
+    .job__info-wrapper__type {
+      display: inline-block;
+      float: right;
+      font-size: 0.9em;
+      font-weight: 600;
+      white-space: nowrap;
+      position: relative; }
+      .job__info-wrapper__type::before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 2px;
+        left: -17px;
+        border-radius: 100%; }
+
+.full-time {
+  color: #fd7473; }
+  .full-time::before {
+    background-color: #fd7473; }
+
+.part-time {
+  color: #fec951; }
+  .part-time::before {
+    background-color: #fec951; }
+
+.freelance {
+  color: #47b8e0; }
+  .freelance::before {
+    background-color: #47b8e0; }
+
+.contract {
+  color: #9f68d0; }
+  .contract::before {
+    background-color: #9f68d0; }
+
+/*# sourceMappingURL=app.css.map */

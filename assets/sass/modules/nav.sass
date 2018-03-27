@@ -1,0 +1,40 @@
+.nav
+    margin-top: 1.5em
+
+    +element('logo')
+        width: 60px
+        margin-right: 10px
+        display: inline-block
+        vertical-align: middle
+        img
+            width: 100%
+            height: 100%
+
+    +element('title')
+        margin: 0
+        display: inline-block
+        vertical-align: middle
+        color: $main_color
+        font-size: 1.5em
+        text-transform: capitalize
+        span
+            font-weight: 400
+
+
+    +element('list')
+        float: right
+        padding-top: 1.9em
+        padding-left: 0
+        margin: 0
+        display: inline-block
+        text-align: right
+        vertical-align: middle
+        list-style: none
+        +element('item')
+            margin: 0 0.5em
+            display: inline-block
+            font-size: 0.8em
+            color: $seconary_color
+            +modifier('active')
+                color: $main_color
+                font-weight: 600
