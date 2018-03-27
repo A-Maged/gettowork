@@ -38,3 +38,19 @@
             +modifier('active')
                 color: $main_color
                 font-weight: 600
+
+
+
+@media only screen and (max-width: 768px)
+    .nav
+        +element('logo')
+            display: block
+            margin: 0 auto 1em
+
+        +element('title')
+            display: block
+            text-align: center
+        +element('list')
+            float: none
+            display: block
+            text-align: center

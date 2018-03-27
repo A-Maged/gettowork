@@ -1,11 +1,13 @@
 .job
-    width: 80%
+    width: 600px
+    max-width: 96%
     margin:  0 auto 2em
     z-index: 10
     padding: 1.3em
     border: 1px solid $border_color
     border-radius: .4em
     background-color: #fff
+    line-height: 20px
     transition: all 0.2s ease-in-out
     &:hover
         box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.1)
@@ -75,3 +77,24 @@
     color: $highlight_4
     &::before
         background-color: $highlight_4
+
+
+
+@media only screen and (max-width: 768px)
+    .job
+        padding: 1em
+
+        +element('company-img')
+            width: 60px
+            height: 60px
+
+        +element('info-wrapper')
+            +element('title')
+                font-size: 1em
+            +element('type')
+                float: none
+                display: block
+                margin-top: .3em
+                // text-align: center
+                &::before
+                    display: none
