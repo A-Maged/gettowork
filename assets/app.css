@@ -60,9 +60,9 @@ a {
 
 @media only screen and (max-width: 768px) {
   .job-listing::after {
-    left: 4em; }
+    left: 3.5em; }
   .job-listing__day {
-    margin-left: 0.5em; } }
+    margin-left: 0; } }
 .nav {
   margin-top: 1.5em; }
   .nav__logo {
@@ -112,8 +112,8 @@ a {
     display: block;
     text-align: center; } }
 .job {
-  width: 100%;
-  margin: 0 0 2em 1em;
+  width: 96%;
+  margin: 0 auto 2em;
   z-index: 10;
   padding: 1.3em;
   border: 1px solid #d9dee9;
